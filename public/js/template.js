@@ -215,12 +215,22 @@ $(document).ready(function($){
     }
   });
 
-  $(".nav-item.nav-dropdown").click( function(){
+  /* $(".nav-item.nav-dropdown").click( function(){
     
     if(/open/.test($(this).attr("class"))){
       $(this).removeClass("open");
     }else{
       $(this).addClass("open");
+    }
+
+  }); */
+  
+  $(".nav-dropdown-toggle").click( function(){
+    
+    if(/open/.test($(this).parent().attr("class"))){
+      $(this).parent().removeClass("open");
+    }else{
+      $(this).parent().addClass("open");
     }
 
   });

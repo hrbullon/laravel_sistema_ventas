@@ -3,6 +3,8 @@
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
+use App\Http\Controllers\CategoryController;
+
 /*
 |--------------------------------------------------------------------------
 | API Routes
@@ -17,3 +19,13 @@ use Illuminate\Support\Facades\Route;
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+/*******Category Routes *******/
+Route::apiResources([
+    'categories'=>CategoryController::class
+]);
+Route::put('/categories/activate/{id}', [CategoryController::class, 'activate']);
+Route::put('/categories/deactivate/{id}', [CategoryController::class, 'deactivate']);
+
+
+

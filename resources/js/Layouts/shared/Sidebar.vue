@@ -12,7 +12,7 @@
                         <a class="nav-link nav-dropdown-toggle" href="#"><i class="icon-bag"></i> Almacén</a>
                         <ul class="nav-dropdown-items">
                             <li class="nav-item">
-                                <a class="nav-link" href="#"><i class="icon-bag"></i> Categorías</a>
+                                <a class="nav-link" href="category"><i class="icon-bag"></i> Categorías</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#"><i class="icon-bag"></i> Artículos</a>
